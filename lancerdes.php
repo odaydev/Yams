@@ -2,7 +2,6 @@
 
 
 $tab_des = array();
-//$place_des = $_GET['nbdes'];
 $count = $_GET['nbdes'];
 
 for($i=0;$i<$count;$i++){
@@ -12,4 +11,3 @@ for($i=0;$i<$count;$i++){
 
 }
 
-//print_r(json_encode($tab_des));

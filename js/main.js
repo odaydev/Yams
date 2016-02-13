@@ -93,7 +93,7 @@ $('#btnLancer').click(function(e){
 	
 	e.preventDefault();
 	countLap++;
-	$('.des').css("display","initial");
+	$('img').css("display","initial");
 	if(countLap == 4){
 
 	}else{
@@ -112,7 +112,11 @@ $('#btnLancer').click(function(e){
 
 					for (var i = 0; i < response.length; i++) {
 
-						$('#des'+rest_des[keys[i]]).text(response[i]);
+						if(response[i] == 5){
+							$('#des'+rest_des[keys[i]]).html('<img src="img/5.jpg" >');	
+						}else{
+							$('#des'+rest_des[keys[i]]).html(response[i]);
+						}
 					};
 					
 				}
