@@ -1,28 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Yams</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+<?php include 'inc/header.php'; ?>
 
-</head>
-<body>
+<div id="wrapper">
 
-<h1>Simulation de lancer de dés (5)</h1>
+	<p>Vous allez maintenant avoir l'honneur immense de pouvoir participer
+ à une expérience ludique qui vous laissera une intense sensation de bonheur et bien être!</p>
 
-<div id="plateau">
-	<div id="des1" class="des" name="1"><img src="img/des.gif"></div>
-	<div id="des2" class="des" name="2"><img src="img/des.gif"></div>
-	<div id="des3" class="des" name="3"><img src="img/des.gif"></div>
-	<div id="des4" class="des" name="4"><img src="img/des.gif"></div>
-	<div id="des5" class="des" name="5"><img src="img/des.gif"></div>
+	<div id="choix_joueurs">
+		<form action="game.php" method="POST">
+			<label>J1: </label>
+			<input type="text" name="j1" placeholder="J1 name's" />
 
-	<form id="lancer" no activate>
-		<button id="btnLancer" type="submit">Lancer</button>
-	</form>
+			<label>J2: </label>
+			<input type="text" name="j2" placeholder="J2 name's" />
+			
+			<button id="btn" type="submit">OK</button>
+		</form>
+		<a id="ajout" href="">Ajoutez un joueur</a>
+	</div>
+	
 </div>
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+
+<?php include 'inc/footer.php'; ?>
 
 </body>
 </html>
