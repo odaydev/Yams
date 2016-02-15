@@ -117,28 +117,22 @@ $('#btnLancer').click(function(e){
 						$('#des'+rest_des[keys[i]]).html('<img src="img/'+response[i]+'.png" name="'+response[i]+'" width="50px" height="50px">');	
 					}
 
-					var des = new Object;
+					var des = new Array;
 
-					des.un = $('#des1 img').attr("name");
-					des.deux = $('#des2 img').attr("name");
-					des.trois = $('#des3 img').attr("name");
-					des.quatre = $('#des4 img').attr("name");
-					des.cinq = $('#des5 img').attr("name");
-
-					des = JSON.stringify(des);
+					des += $('#des1 img').attr("name");
+					des += $('#des2 img').attr("name");
+					des += $('#des3 img').attr("name");
+					des += $('#des4 img').attr("name");
+					des += $('#des5 img').attr("name");
+// console.log(des);
+// 					des = JSON.stringify(des);
 
 					$.ajax({
 						url : "calculdes.php",
 						type : "POST",
 						data : "des="+des,
 						success : function(response){
-							
-							// var keys = Object.keys(rest_des);
-
-							// for (var i = 0; i < response.length; i++) {
-
-							// 	//$('#des'+rest_des[keys[i]]).html('<img src="img/'+response[i]+'.png" name="'+response[i]+'" width="50px" height="50px">');	
-							// }
+							console.log(response);
 						}
 					});
 					
