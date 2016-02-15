@@ -125,6 +125,8 @@ $('#btnLancer').click(function(e){
 					des.quatre = $('#des4 img').attr("name");
 					des.cinq = $('#des5 img').attr("name");
 
+					des = JSON.stringify(des);
+
 					$.ajax({
 						url : "calculdes.php",
 						type : "POST",
