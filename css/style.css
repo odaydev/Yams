@@ -1,5 +1,63 @@
 html{
 	background-color: #5388CD;
+	font-family: 'Passion One', cursive;
+}
+
+h1{
+	color: yellow;
+	font-size: 80px;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	text-align: center;
+}
+
+li{
+	list-style-type: none;
+	
+	display: inline-block;
+	border-radius: 20px;
+	border: 3px solid #FFF;
+	margin: auto 5px;	
+	width: 120px;
+	
+	background-color: yellow;
+	font-size: 30px;
+	color:#5388CD;
+	text-align: center;	
+}
+
+li a{
+	text-decoration: none;
+	color: #5388CD;
+}
+
+li a:hover{
+	color:yellow;
+}
+
+li:hover{
+	color:yellow;
+	background-color: #5388CD;
+}
+
+#social{
+	text-align: right;
+	margin-right: 250px;
+	color: yellow;
+}
+
+#social span a i{
+	color: #FFF;
+	margin-left: 5px;
+}
+
+#plateau{
+	/*width: 70px;*/
 }
 
 #plateau div{
@@ -12,14 +70,31 @@ html{
 	vertical-align: middle;
 }
 
+#game{
+	/*width: 820px;*/
+}
+
 #wrapper{
 	
 	width: 70%;
-	margin: auto;
+	min-height: 650px;
+	margin: 50px auto;
+	border: 3px solid black;
+	border-radius: 15px;
+	padding: 20px;
 }
 
+#content{
+
+	display: block;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
 #tab{
-	border: 1px solid black;/**/
+	border: 1px solid yellow;/**/
 	border-radius: 20px;
 	margin: auto;	
 	color: black;

@@ -1,7 +1,5 @@
 <?php include 'inc/header.php'; ?>
 
-<div id="wrapper">
-
 	<p>Vous allez maintenant avoir l'honneur immense de pouvoir participer
  à une expérience ludique qui vous laissera une intense sensation de bonheur et bien être!</p>
  	
@@ -18,9 +16,6 @@
 
 	</div>
 	
-</div>
-
-
 <?php include 'inc/footer.php'; ?>
 
 </body>

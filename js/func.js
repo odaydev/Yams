@@ -33,7 +33,7 @@ function showChoice(cpt,currentPlayer,currentPlayerScore){
 	currentPlayer[16].css("color","red");
 	$(currentPlayer[16]).on("click", function(){
 		currentPlayer[16].addClass("yep");
-		currentPlayerScore[numCurrentPlayer][16] = cptTot;
+		currentPlayerScore[numCurrentPlayer][[16]] = cptTot;
 		console.log(currentPlayerScore);
 		currentPlayer[16].css("background-color","");
 		currentPlayer[16].css("color","black");
@@ -220,7 +220,7 @@ function fichePlayers(nbP){
 	var a = []; 
 	for(i=0;i<nbP;i++){a += i+1;} 
 	var k = null;
-	var tabPlayers = {};
+	tabPlayers = {};
 	var tabP = [];
 	var i = 0;
 	//var playerScore = [];

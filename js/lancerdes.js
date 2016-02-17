@@ -133,7 +133,7 @@ $('#btnLancer').click(function(e){
 						data : "des="+des,
 						success : function(response){
 							
-							fichePlayers(c);
+							fichePlayers(2);
 							
 							response = $.parseJSON(response);
 							eval(response);
