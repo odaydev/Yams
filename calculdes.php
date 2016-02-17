@@ -44,12 +44,33 @@ for($i=0;$i<5;$i++){
 	if(in_array(5,$dices)) $GS++;
 	if(in_array(6,$dices)) $GS++;
 
+	$response[] = $cpt1;
+	$response[] = $cpt2;
+	$response[] = $cpt3;
+	$response[] = $cpt4;
+	$response[] = $cpt5;
+	$response[] = $cpt6;
+	$response[] = $p;
+
 	if($PS == 5){
-		var_dump($cpt1,$cpt2,$cpt3,$cpt4,$cpt5,$cpt6,$p,$r="ps");
+		
+		$r = "ps";
+		$response[] = $r;
+		var_dump($response);
+
 	}else if($GS == 5){
-		var_dump($cpt1,$cpt2,$cpt3,$cpt4,$cpt5,$cpt6,$p,$r="gs");
+
+		$r = "gs";
+		$response[] = $r;
+		var_dump($response);
+
 	}else{
-		var_dump($cpt1,$cpt2,$cpt3,$cpt4,$cpt5,$cpt6,$p);
+		$response[] = $r;
+		echo json_encode($response);
+
+		// foreach ($response as $key => $value) {
+		//  	echo json_encode($value);
+		//  } 
 	}	
 
 //showChoice(recupCpt, currentPlayer,currentPlayerScore);

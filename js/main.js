@@ -1,6 +1,18 @@
-var c = 3;
-$('#ajout').click(function(){
-	//e.preventDefault();
-	$('#btn').before('<label>J'+c+': </label><input type="text" name="j'+c+'" placeholder="J'+c+' name\'s" />');
-	c++;
+function form_joueur(){
+
+	var nbj = $('#select option:selected').text();
+	$.ajax({
+		url:"form_joueur.php",
+		type: "POST",
+		data: "nbj="+nbj,
+		success: function(response){
+
+			$('#choix_joueurs').html(response);
+		}
+
+	});
+}
+
+$("#more").click(function(){
+
 });

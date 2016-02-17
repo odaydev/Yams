@@ -132,7 +132,19 @@ $('#btnLancer').click(function(e){
 						type : "POST",
 						data : "des="+des,
 						success : function(response){
-							console.log(response);
+							
+							fichePlayers(c);
+							
+							response = $.parseJSON(response);
+							eval(response);
+							
+							res = [];
+							
+							for(elem in response){
+            					res.push(response[elem]);
+       						}
+							
+							showChoice(response,currentPlayer,currentPlayerScore);
 						}
 					});
 					

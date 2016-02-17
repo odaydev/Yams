@@ -1,19 +1,18 @@
 <?php include 'inc/header.php'; ?>
 <?php
 
-	if($_POST){
+	if($_GET){
 		
-		$keys = array_keys($_POST);
+		$keys = array_keys($_GET);
 		
 		for($i=0;$i<count($keys);$i++){
-			if(!empty($_POST["$keys[$i]"])) $tab_joueur[] = $_POST["$keys[$i]"]; else header("Location:index.php?e=2");
+			if(!empty($_GET["$keys[$i]"])) $tab_joueur[] = $_GET["$keys[$i]"]; else header("Location:index.php?e=2");
 		}
 		
 	}else{
 		header("Location:index.php?e=1");
 	}
 
-var_dump($tab_joueur);
 ?>
 
 <h1>Simulation de lancer de dés (5)</h1>

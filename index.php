@@ -4,18 +4,18 @@
 
 	<p>Vous allez maintenant avoir l'honneur immense de pouvoir participer
  à une expérience ludique qui vous laissera une intense sensation de bonheur et bien être!</p>
-
+ 	
 	<div id="choix_joueurs">
-		<form action="game.php" method="POST">
-			<label>J1: </label>
-			<input type="text" name="j1" placeholder="J1 name's" />
+		
+		<select onchange="form_joueur()" name="select" id="select">
+		 	<option>-</option>
+		 	<option>2</option>
+		 	<option>3</option>
+		 	<option>4</option>
+		 	<option>5</option>
+		 	<option>6</option>
+ 		</select>
 
-			<label>J2: </label>
-			<input type="text" name="j2" placeholder="J2 name's" />
-			
-			<button id="btn" type="submit">OK</button>
-		</form>
-		<a id="ajout" href="">Ajoutez un joueur</a>
 	</div>
 	
 </div>
